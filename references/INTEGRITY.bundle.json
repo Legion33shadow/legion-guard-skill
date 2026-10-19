@@ -2,14 +2,14 @@
  "format": "legion-notary-bundle/v0",
  "log_origin": "notary.legion-api.com/proto-v0",
  "log_vkey": "legion-notary-proto+9a111253+AeTCvM2cYg1CEzCL3qNbb7IXUdNnllPR3ktBmHroOLKT",
- "entry_b64": "bGVnaW9uLW5vdGFyeS92MApzaGEyNTYgNjk4NGE0YTJmNDljNDAxZDZmODQwYzA2MjY4MTlkZTI5MmY1ZmRlNjk0OGJhNGI3ZmU2OGIxMWNjODM2NDljZgpyZWNlaXZlZCAxNzkyNDMyODI4Cg==",
- "leaf_index": 5,
- "tree_size": 6,
+ "entry_b64": "bGVnaW9uLW5vdGFyeS92MApzaGEyNTYgYzFhN2Q2MGVmYTM2ZDk2MGFkYmU4YmQ4ZWQwZmE0OWVlM2Q1MWFmOGIxZTBlZTlhNTkxMmExZjYwMzQwMmU4ZgpyZWNlaXZlZCAxNzkyNDM0MDM0Cg==",
+ "leaf_index": 6,
+ "tree_size": 7,
  "inclusion_proof_b64": [
-  "6+vuU5ZhIroQ7L6M7Q4Vdy6S4j7Ddu9ywaumtgaY+nM=",
+  "8eoeoKhCxI3QMuLZySk8i69WfppYISrRrtG209hlubU=",
   "llM5VAF8lVQrl7eMj04i6isU78w5mZB6S/ckaGFME8g="
  ],
- "checkpoint": "notary.legion-api.com/proto-v0\n6\nE/k5deQEQywsOKBb4HFr5OerRmarp7AEX4HTAXfRAcA=\n\n— legion-notary-proto mhESU9qH3jpErwVRL5UkXUPInnwkej96O776j9Ri6RfNIuJf7KmSykfwElHKrx7FMUoiWz6DhpNJrSU36NG8n2dcgAY=\n",
+ "checkpoint": "notary.legion-api.com/proto-v0\n7\nVoT8KsEDVqPetY/hGKuaz8N7XbEW51ShOPQOGJB3VjA=\n\n— legion-notary-proto mhESU6owLnvOCUcDL5X9R+qW84gspThlxcqC7KxE7eucXtQL/TQ//ox2HzTQwEslHwnP8b5ANkw3fGoIRO7E3kgmJwk=\n",
  "claim_boundary": {
   "fr": {
    "ce_que_ca_prouve": "CE QUE ÇA PROUVE : le hash est dans un arbre append-only à racine signée, vérifiable hors-ligne par des outils tiers, et l'historique déjà vu par un client ne peut pas être réécrit.",

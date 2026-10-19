@@ -1,10 +1,10 @@
 # Integrity of this package
 
-**Fingerprint (canonical SHA-256):** `6984a4a2f49c401d6f840c0626819de292f5fde6948ba4b7fe68b11cc83649cf`
-**Notary log:** https://notary.legion-api.com, origin `notary.legion-api.com/proto-v0`, **leaf 5**, received 2026-10-19 18:00:28 UTC (time as declared by the log).
+**Fingerprint (canonical SHA-256):** `c1a7d60efa36d960adbe8bd8ed0fa49ee3d51af8b1e0ee9a5912a1f603402e8f`
+**Notary log:** https://notary.legion-api.com, origin `notary.legion-api.com/proto-v0`, **leaf 6**, received 2026-10-19 18:20:34 UTC (time as declared by the log).
 **Log key (pin it):** `legion-notary-proto+9a111253+AeTCvM2cYg1CEzCL3qNbb7IXUdNnllPR3ktBmHroOLKT`
 **Covered:** every file of the skill (this repository's working tree, without `.git/`) except references/INTEGRITY* (which carry this proof) and `.well-known/*` (marketplace ownership-claim files, not skill content). Signed entry, RFC 9162 inclusion proof and C2SP signed-note checkpoint: `references/INTEGRITY.bundle.json`.
-**Source of truth:** the content of the repository https://github.com/Legion33shadow/legion-guard-skill. This fingerprint replaces the earlier ones (leaf 3: zip; leaf 4: before `.well-known/` was excluded); it is computed from the files, not from any archive.
+**Source of truth:** the content of the repository https://github.com/Legion33shadow/legion-guard-skill. This fingerprint replaces the earlier ones (leaf 3: zip; leaf 4: before `.well-known/` was excluded; leaf 5: earlier wording of SKILL.md section 5); it is computed from the files, not from any archive.
 
 ## Check your copy
 From the root of your copy (the directory that contains `SKILL.md`), with git and coreutils only:

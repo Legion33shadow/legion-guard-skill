@@ -92,7 +92,7 @@ a log record as legal proof. Field-by-field meanings: `references/verdicts.md`. 
 
 ## 5. Integrity of this package
 
-The content of this skill (every file except `references/INTEGRITY*`) is recorded in a public append-only notary log
+The content of this skill (the files covered by the rule given in `references/INTEGRITY.md`) is recorded in a public append-only notary log
 with a signed inclusion proof. `references/INTEGRITY.md` gives the fingerprint, the log entry and how to check that
-your copy is exactly the recorded one. This proves the files are unchanged since they were recorded; it does not
+your copy is exactly the recorded one. This proves the covered files are unchanged since they were recorded; it does not
 prove that the skill is safe or correct.
