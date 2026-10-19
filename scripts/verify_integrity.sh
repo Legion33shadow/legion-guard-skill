@@ -5,6 +5,6 @@
 # No network call. Exit 0 = VALID, 1 = INVALID.
 set -eu
 HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd); ROOT=$(dirname "$HERE")
-FP=$(cd "$ROOT" && find . -type f ! -path './.git/*' ! -path './references/INTEGRITY*' ! -path '*/__pycache__/*' -print0 | LC_ALL=C sort -z | xargs -0 sha256sum | sha256sum | cut -c1-64)
+FP=$(cd "$ROOT" && find . -type f ! -path './.git/*' ! -path './.well-known/*' ! -path './references/INTEGRITY*' ! -path '*/__pycache__/*' -print0 | LC_ALL=C sort -z | xargs -0 sha256sum | sha256sum | cut -c1-64)
 echo "canonical fingerprint of this copy: $FP"
 python3 "$HERE/integrity/verify_bundle.py" "$ROOT/references/INTEGRITY.bundle.json" --sha256 "$FP" --log-vkey "$1"
