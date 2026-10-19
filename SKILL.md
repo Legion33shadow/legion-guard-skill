@@ -96,3 +96,12 @@ The content of this skill (the files covered by the rule given in `references/IN
 with a signed inclusion proof. `references/INTEGRITY.md` gives the fingerprint, the log entry and how to check that
 your copy is exactly the recorded one. This proves the covered files are unchanged since they were recorded; it does not
 prove that the skill is safe or correct.
+
+**Coverage is not total.** The fingerprint cannot cover its own proof files: `references/INTEGRITY.md` and
+`references/INTEGRITY.bundle.json` are excluded by necessity (a file cannot contain its own hash), and so is
+`.well-known/` (marketplace ownership claims, not skill content). An attacker who can rewrite your copy of
+`references/INTEGRITY.md` could therefore change the stated fingerprint, log key or verification command **without
+changing the fingerprint itself**. The only defence is out-of-band: compare the fingerprint and leaf number with the
+ones published outside this archive (the repository release and the marketplace listing), and verify with a log key
+you obtained yourself (`curl https://notary.legion-api.com/notary/v0/vkey`), never one copied from the archive. Every
+covered file — all code, every script, SKILL.md itself — is bound by the fingerprint; only these named proof files are not.
