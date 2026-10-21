@@ -7,8 +7,8 @@ license: MIT
 
 # legion-guard: verify the MCP tools before (and while) using them
 
-Compares the `tools/list` **this client receives** with references (a server can change tool descriptions, even
-mid-session) and reports differences. It never calls a tool. Requires `pip install "mcp>=1.24" "cryptography>=50"`; legion-guard 0.2.3 code is bundled (`references/PROVENANCE.md`).
+Compares the `tools/list` **this client receives** with references (servers can change tool descriptions, even
+mid-session) and reports differences; never calls a tool. Requires `pip install "mcp>=1.24" "cryptography>=50"`; legion-guard 0.2.3 code is bundled (`references/PROVENANCE.md`).
 
 ## Claim boundary (always applies; read `references/claim-boundary.md`, tell the user the points that apply)
 
@@ -46,13 +46,12 @@ few calls. Only the first page of a paginated list is compared. Without client c
 
 ## 3. Reporting
 
-Give the verdict, the tools and the source that saw the difference (`first-use`, `pinned`, `legion`), then the
+Give the verdict, the tools and the source that saw it (`first-use`, `pinned`, `legion`), then the
 claim-boundary points that apply. Never call a server "safe", "verified secure" or "certified", nor a log record legal proof. Fields: `references/verdicts.md`.
 Library API and custom sources: https://pypi.org/project/legion-guard/0.2.3/.
 
 ## 4. Integrity of this package
 
-`references/INTEGRITY.md`: fingerprint of the covered files, its notary log entry, how to check your copy. It proves the
-covered files are unchanged since recorded, not that the skill is safe. **Coverage is not total:** the proof files and
-`.well-known/` are excluded, so a rewritten `INTEGRITY.md` can state another fingerprint; compare fingerprint and leaf
-with those published outside the archive and use a log key you fetched yourself. All code and SKILL.md are covered.
+`references/INTEGRITY.md`: fingerprint, notary entry, how to check your copy. Proves the covered files (all code and
+SKILL.md) are unchanged since recorded, not that the skill is safe. **Coverage is not total** (proof files and
+`.well-known/` excluded): compare fingerprint and leaf out of band and use a log key you fetched yourself.

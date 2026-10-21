@@ -13,5 +13,5 @@ commit `6111e8e`): each file matches its sha256 in the wheel's `RECORD`. `LICENS
 **Not bundled:** `vendor/legion_verify_mirror.py`; its pure-Python Ed25519 fallback follows the RFC 8032 section 6
 reference code, not original LEGION code. Hence `cryptography` is required; with it, legion-guard never imports that file.
 
-The wrapper scripts are written for this skill; `scripts/selftest/` comes from the legion-guard tests, with a neutral
-test string in `fake_midsession_server.py` instead of the simulated injection text.
+Wrapper scripts: written for this skill. `scripts/selftest/`: from the legion-guard tests, with a neutral test string
+instead of the simulated injection text.
