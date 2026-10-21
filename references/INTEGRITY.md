@@ -1,7 +1,7 @@
 # Integrity of this package
 
-**Fingerprint (canonical, legion-skill-manifest/v1):** `a96ba429545ac52ca5742de389e7c5b6099e9eddd663b5539d40ca37d948dafe`
-**Notary log:** https://notary.legion-api.com, origin `notary.legion-api.com/proto-v0`, **leaf 7**, received 2026-10-19 20:18:48 UTC (time as declared by the log).
+**Fingerprint (canonical, legion-skill-manifest/v1):** `9931e0c6049a22878b68390b4b78de8605f65faa19f477a870445e5830db2804`
+**Notary log:** https://notary.legion-api.com, origin `notary.legion-api.com/proto-v0`, **leaf 8**, received 2026-10-21 06:43:44 UTC (time as declared by the log).
 **Log key (pin it):** `legion-notary-proto+9a111253+AeTCvM2cYg1CEzCL3qNbb7IXUdNnllPR3ktBmHroOLKT`
 **Rule (legion-skill-manifest/v1):** a canonical manifest, one line per covered file `type⇥mode⇥sha256(content)⇥path`;
 the fingerprint is the SHA-256 of that manifest. It binds path, type, mode and content, and **refuses** (does not hash)
@@ -11,7 +11,7 @@ and smuggled `__pycache__`/`references/INTEGRITY*` siblings.
 **Excluded, by EXACT path (never a glob):** `references/INTEGRITY.md`, `references/INTEGRITY.bundle.json` (they carry
 this proof) and `.well-known/mcprush.com-claim.txt` (marketplace ownership claim). Every other file is covered.
 Signed entry, RFC 9162 inclusion proof and C2SP checkpoint: `references/INTEGRITY.bundle.json`.
-**Source of truth:** the content of https://github.com/Legion33shadow/legion-guard-skill. Supersedes leaves 3–6.
+**Source of truth:** the content of https://github.com/Legion33shadow/legion-guard-skill. Supersedes leaves 3–7 (leaf 7 = the same rule before the `mcp>=1.24` requirement change).
 
 ## Check your copy
 From the root of your copy (the directory that contains `SKILL.md`), with the key you fetched yourself
