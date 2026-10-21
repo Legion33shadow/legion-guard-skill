@@ -22,8 +22,8 @@ which are not requests.
 | `.mcp-tools.lock.json` in the current directory (or `--lock FILE`) | only `approve_mcp_server.sh` |
 
 ## Dependencies (installed by you)
-`pip install "mcp>=2.2" "cryptography>=50"` — `mcp` 2.2.0 or later (versions 2.0.0–2.1.1 and 1.8.0–1.29.1 are affected by
-GHSA-84m7-p3x7-pcfv on the server side); `cryptography` 50 or later verifies the Ed25519 signatures (earlier versions have published advisories in OSV).
+`pip install "mcp>=1.24" "cryptography>=50"` — `mcp` 1.24.0 or later: the first version that has `mcp.client.streamable_http.streamable_http_client` (measured 2026-10-21: 1.23.3 fails to connect, 1.24.0, 1.30.0, 2.1.1 and 2.3.0 pass).
+GHSA-84m7-p3x7-pcfv (unbounded sessions in the StreamableHTTP transport, fixed in 1.30.0 and 2.2.0) is on the server side; this skill only uses the client. If the same environment also runs MCP servers, use `mcp` 1.30.0+ (1.x) or 2.2.0+.
 
 ## Code that can open a connection
 - `scripts/legion_guard/__main__.py`, `scripts/watch_session.py`: connect to the MCP server URL you pass (MCP SDK `streamable_http_client`).

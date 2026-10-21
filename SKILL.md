@@ -12,7 +12,7 @@ An agent reads an MCP server's tool descriptions as instructions. A server can e
 with other descriptions, than the ones approved earlier, and it can change them in the middle of a session. This skill
 compares what **this client actually receives** with references, and reports the difference. It never calls a tool.
 
-Requirements (install once): `pip install "mcp>=2.2" "cryptography>=50"`. The legion-guard 0.2.3 code is bundled in
+Requirements (install once): `pip install "mcp>=1.24" "cryptography>=50"`. The legion-guard 0.2.3 code is bundled in
 `scripts/legion_guard/` (see `references/PROVENANCE.md`).
 
 ## Claim boundary (always applies; tell the user when you report a result)
